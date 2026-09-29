@@ -10,11 +10,20 @@ grandes telas: acima de 1200px
 
 */
 
+:root {
+    --amarelo: #ffe45e;
+    --vermelho: #8c1c13;
+    --verde: #0cd65d;
+    --verde-escuto: #077e37;
+    --branco: #fff;
+    --preto: #000;
+}
+
 /* Configuração para tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
     body {
-        background-image: linear-gradient(to top, #FFE45E, #8C1C13);
+        background-image: linear-gradient(to top, var(--amarelo), var(--vermelho));
     }
 
     section#login {
@@ -36,7 +45,7 @@ grandes telas: acima de 1200px
 /* Configuração para grandes telas */
 @media screen and (min-width: 992px) {
      body {
-        background-image: linear-gradient(to top, #FFE45E, #8C1C13);
+        background-image: linear-gradient(to top, var(--amarelo), var(--vermelho));
     }
 
 
